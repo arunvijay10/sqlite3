@@ -1,6 +1,12 @@
 import sqlite3
+
 conn =sqlite3.connect("new1.db")
+
 createtable=  "create table todo(id int ,info text,extra text)"
 conn.execute(createtable)
-print(createtable)
+
+
+
 print("connection sucessfull")
+print("Created a table")
+
