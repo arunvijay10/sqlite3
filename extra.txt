@@ -2,4 +2,7 @@ sqlite3 new1.db
 .tables 
 .schema todo
 
-
+we also use conn.commit() after inserting value because it will ask for the 
+confirmation that we need to commit or not
+ 
+select * from todo;

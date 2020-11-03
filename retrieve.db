@@ -1,0 +1,11 @@
+import sqlite3
+conn = sqlite3.connect("new1.db")
+
+retrievedata = "select * from todo"
+conn.execute(retrievedata)
+
+r ="select extra from todo"
+conn.execute(r)
+
+print("Done Successfully")
+

@@ -4,4 +4,6 @@ conn = sqlite3.connect("new1.db")
 insertdata = "insert into todo(id,info,extra) values (1,'Random Person','Coder')"
 conn.execute(insertdata)
 
+conn.commit()
 print("Data Inserted Successfully")
+
