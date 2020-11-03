@@ -1,0 +1,5 @@
+sqlite3 new1.db
+.tables 
+.schema todo
+
+
