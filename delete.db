@@ -1,0 +1,14 @@
+import sqlite3
+conn = sqlite3.connect("new1.db")
+print("Delete Command")
+dele = "delete from todo where id =1"
+
+conn.execute(dele)
+conn.commit()
+
+res="select * from todo"
+now=conn.execute(res)
+
+for i in now:
+	print(i) 
+print("Program executed Correctly")
