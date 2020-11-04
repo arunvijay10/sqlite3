@@ -5,7 +5,9 @@ retrievedata = "select * from todo"
 conn.execute(retrievedata)
 
 r ="select extra from todo"
-conn.execute(r)
+z=conn.execute(r)
 
 print("Done Successfully")
 
+for i in z:
+	print(i)

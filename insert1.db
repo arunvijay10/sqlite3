@@ -1,0 +1,15 @@
+import sqlite3
+conn = sqlite3.connect("new1.db")
+
+comm= "select * from todo"
+res = conn.execute(comm)
+for i in res:
+	print(i)
+		
+print("This is a next Method")
+
+for some in res:
+	id,extra,info = some
+	print(id,extra,info) 
+
+print("Working Properly")
