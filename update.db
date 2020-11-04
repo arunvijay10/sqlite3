@@ -1,0 +1,12 @@
+import sqlite3
+conn = sqlite3.connect("new1.db")
+
+upp = "update todo set info = 'This' where id = 1"
+conn.execute(upp)
+conn.commit()
+
+res= conn.execute("select info  from todo")
+
+for i in res:
+	print(i)
+print("Done",conn.total_changes)
